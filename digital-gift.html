@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Digital Gift 💝</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Comic Sans MS", cursive, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #f7a8b8 0%, #f3b2c2 45%, #f7c4cf 100%);
+      background-size: 200% 200%;
+      animation: softBgMove 10s ease infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    @keyframes softBgMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .bg-float {
+      position: absolute;
+      font-size: 1.4rem;
+      opacity: 0.55;
+      pointer-events: none;
+      animation: floaty 6s ease-in-out infinite;
+      z-index: 1;
+      filter: drop-shadow(0 2px 4px rgba(255,255,255,0.4));
+    }
+
+    .f1 { top: 10%; left: 8%; animation-delay: 0s; }
+    .f2 { top: 16%; right: 10%; animation-delay: 1s; }
+    .f3 { bottom: 16%; left: 12%; animation-delay: 2s; }
+    .f4 { bottom: 12%; right: 9%; animation-delay: 3s; }
+    .f5 { top: 45%; left: 6%; animation-delay: 4s; }
+    .f6 { top: 42%; right: 14%; animation-delay: 2.5s; }
+    .f7 { bottom: 35%; right: 5%; animation-delay: 1.5s; }
+    .f8 { top: 6%; left: 48%; animation-delay: 0.7s; }
+
+    @keyframes floaty {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-12px) rotate(4deg); }
+    }
+
+    .card {
+      position: relative;
+      z-index: 5;
+      background: transparent;
+      border: none;
+      border-radius: 0;
+      padding: 20px;
+      max-width: 760px;
+      width: 100%;
+      text-align: center;
+      box-shadow: none;
+      backdrop-filter: none;
+      animation: popIn 0.6s ease;
+    }
+
+    @keyframes popIn {
+      0% {
+        opacity: 0;
+        transform: scale(0.96) translateY(8px);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+      }
+    }
+
+    h1 {
+      color: #ff1493;
+      margin-bottom: 8px;
+      font-size: 2rem;
+      text-shadow: 1px 1px 8px rgba(255,255,255,0.9);
+    }
+
+    p {
+      color: #8a2be2;
+      margin-bottom: 16px;
+      font-size: 1.05rem;
+      text-shadow: 1px 1px 4px rgba(255,255,255,0.6);
+    }
+
+    .gift-image-wrap {
+      background: transparent;
+      border-radius: 18px;
+      padding: 0;
+      box-shadow: none;
+      margin-bottom: 18px;
+    }
+
+    .gift-image {
+      width: auto;
+      max-width: 100%;
+      max-height: 440px;
+      object-fit: contain;
+      border-radius: 14px;
+      background: transparent;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .btns {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: 0.25s ease;
+      font-size: 0.95rem;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: linear-gradient(45deg, #ff7fb0, #ff4f9a);
+      color: #fff;
+      box-shadow: 0 6px 14px rgba(255, 79, 154, 0.25);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 8px 16px rgba(255, 79, 154, 0.35);
+    }
+
+    .btn-secondary {
+      border: 2px solid #8a2be2;
+      color: #8a2be2;
+      background: rgba(255,255,255,0.65);
+    }
+
+    .btn-secondary:hover {
+      background: #8a2be2;
+      color: #fff;
+      transform: translateY(-2px);
+    }
+
+    .sparkle-line {
+      margin-top: 12px;
+      font-size: 0.95rem;
+      color: #ff1493;
+      opacity: 0.9;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      p {
+        font-size: 0.95rem;
+      }
+
+      .card {
+        padding: 16px;
+      }
+
+      .gift-image {
+        max-height: 340px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Cute floating emojis -->
+  <div class="bg-float f1">✨</div>
+  <div class="bg-float f2">💖</div>
+  <div class="bg-float f3">🎈</div>
+  <div class="bg-float f4">🎉</div>
+  <div class="bg-float f5">✨</div>
+  <div class="bg-float f6">💝</div>
+  <div class="bg-float f7">🌸</div>
+  <div class="bg-float f8">⭐</div>
+
+  <div class="card">
+    <h1>🎉💕🎉💕🎉💕🎉</h1>
+    <p>💕 From your Little Fam 💕</p>
+
+    <div class="gift-image-wrap">
+      <!-- Replace gift-photo.jpg with your actual image file -->
+      <img src="gift-photo.png" alt="Digital Gift" class="gift-image" />
+    </div>
+
+    <div class="btns">
+      <a href="gift-photo.png" download class="btn btn-primary">Download Gift 💝</a>
+      <!-- I<a href="gift-box.html" class="btn btn-secondary">Back to Gift Box 🎁</a> -->
+      <!-- If you want to go all the way back to your main page, change to index.html -->
+      <!-- <a href="index.html" class="btn btn-secondary">Back Home</a> -->
+    </div>
+
+    <div class="sparkle-line">💕 Happy Birthday Byyyy 💕</div>
+  </div>
+</body>
+</html>
